@@ -1,0 +1,33 @@
+name: Modularize CSS
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - tools/modularize-css.mjs
+      - .github/workflows/modularize-css.yml
+
+permissions:
+  contents: write
+
+jobs:
+  modularize-css:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Extract CSS from HTML
+        run: node tools/modularize-css.mjs
+      - name: Commit extracted CSS
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html css/main.css css/report.css css/print.css docs/reorganization-plan.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Extract CSS from calculator HTML"
+            git push
+          fi
