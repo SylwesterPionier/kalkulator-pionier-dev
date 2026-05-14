@@ -24,9 +24,9 @@
   - `css/print.css`
 - Zachowano oryginalny plik aplikacji bez zmian.
 
-## Etap 2 - nastepny bezpieczny krok
+## Etap 2 - wykonany
 
-Mechanicznie wydzielic CSS z bloku `<style>` w pliku produkcyjnym:
+CSS zostal mechanicznie wydzielony z bloku `<style>` w pliku produkcyjnym:
 
 - style ogolne aplikacji do `css/main.css`,
 - style raportu i PDF do `css/report.css`,

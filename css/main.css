@@ -1,5 +1,203 @@
-/*
- * Main application styles.
- * Prepared for the next safe modularization step.
- * The current production styles still live in the legacy HTML file to preserve behavior.
- */
+/* Extracted from kalkulator_pionier_energia_v55_.html.html. CSS only; JavaScript logic unchanged. */
+
+:root{--green:#2f8a00;--green2:#1d6500;--lime:#eaf7e2;--yellow:#ffcc00;--navy:#0e2947;--blue:#176ee6;--dark:#172515;--muted:#667361;--line:#dfe8d8;--soft:#f6f9f2;--card:#fff;--red:#b3261e;--orange:#f28c00;--sig:#0b5d32}
+
+*{box-sizing:border-box}
+
+html,body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f4f7f1;color:var(--dark);font-size:14px;line-height:1.35}
+
+button,input,select,textarea{font:inherit}
+
+.top{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5;overflow:visible}
+
+.topIn{max-width:1420px;margin:auto;padding:14px 18px 16px;display:flex;align-items:flex-start;gap:18px;min-height:84px}
+
+.brandMark{font-weight:950;color:var(--green2);font-size:22px;letter-spacing:.04em}
+
+.brandMark span{color:var(--yellow)}
+
+.topTitle{font-weight:900;color:var(--navy);padding-top:2px}
+
+.topSub{font-size:12px;color:var(--muted)}
+
+.topBrandText{padding-top:4px}
+
+.topRightInfo{margin-left:auto;text-align:right;padding-top:6px}
+
+.wrap{max-width:1420px;margin:16px auto;padding:0 16px}
+
+.hero{background:linear-gradient(135deg,#fff,#edf8e6);border:1px solid var(--line);border-radius:20px;padding:18px;display:grid;grid-template-columns:1fr .42fr;gap:16px;align-items:center}
+
+.hero h1{margin:0;font-size:30px;color:var(--navy);line-height:1.05}
+
+.hero p{margin:8px 0 0;color:var(--muted)}
+
+.pill{display:inline-block;margin:8px 5px 0 0;background:#e8f5e1;color:var(--green2);font-weight:900;border-radius:999px;padding:6px 10px;font-size:12px}
+
+.layout{display:grid;grid-template-columns:390px 1fr;gap:18px;margin-top:18px}
+
+.panel,.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 6px 22px rgba(30,80,10,.06)}
+
+.panel h2,.card h2{margin:0 0 10px;color:var(--navy)}
+
+.section{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--green2);font-weight:950;margin:18px 0 8px;padding-top:12px;border-top:1px solid var(--line)}
+
+label{font-size:12px;font-weight:850;color:#344b30;display:block;margin:8px 0 4px}
+
+input,select,textarea{width:100%;border:1px solid #cfdcc9;border-radius:10px;padding:8px 9px;min-height:36px;background:#fff}
+
+textarea{height:90px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px}
+
+.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+
+.hint{font-size:11px;color:var(--muted);margin-top:4px}
+
+.hide{display:none!important}
+
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+
+button{border:0;border-radius:12px;padding:10px 14px;font-weight:950;cursor:pointer}
+
+.primary{background:var(--green);color:#fff}
+
+.secondary{background:#e6f3de;color:var(--green2)}
+
+.warning{background:var(--yellow);color:#3a2a00}
+
+.ghost{background:#eef3ea;color:#2e3c2b}
+
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+
+.metric{border:1px solid var(--line);border-radius:16px;padding:14px;background:#fff}
+
+.metric .label{font-size:12px;color:var(--muted);font-weight:850}
+
+.metric .value{font-size:25px;font-weight:950;color:var(--green2);margin-top:4px}
+
+.variantGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+
+.variantCard{border:1px solid var(--line);border-radius:16px;padding:12px;background:#fff;position:relative;overflow:hidden}
+
+.variantCard.recommended{border:2px solid var(--green);box-shadow:0 10px 28px rgba(47,138,0,.16);background:linear-gradient(180deg,#fff,#f4fbef)}
+
+.variantBadge{font-size:11px;font-weight:950;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+
+.variantCard.recommended .variantBadge{color:var(--green2)}
+
+.badgeHot{position:absolute;right:10px;top:10px;background:var(--yellow);color:#352700;border-radius:999px;padding:5px 8px;font-size:10px;font-weight:950}
+
+.variantName{font-size:18px;font-weight:950;color:var(--navy);margin-top:3px}
+
+.variantSet{font-size:12px;color:var(--muted);min-height:32px}
+
+.variantPrice{font-size:23px;font-weight:950;color:var(--green2);margin-top:8px}
+
+.variantGross{font-size:13px;font-weight:850;color:#43523f}
+
+.miniTable{width:100%;border-collapse:collapse;margin-top:8px;font-size:12px}
+
+.miniTable td{border-bottom:1px solid var(--line);padding:4px 0}
+
+.miniTable td:last-child{text-align:right;font-weight:850}
+
+.editRow{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+
+.editRow label{font-size:10px;margin:0 0 3px}
+
+.editRow input{min-height:30px;padding:5px 7px;font-size:12px}
+
+.positive{color:var(--green2);font-weight:950}
+
+.mini{font-size:11px;color:var(--muted)}
+
+.barLabel1{top:16px}
+
+.barLabel2{top:42px}
+
+/* v25: identyfikacja wizualna i optymalizacja wydruku */
+
+.brandLogo{width:280px;max-width:32vw;height:auto;max-height:68px;object-fit:contain;object-position:left top;display:block;flex:0 0 auto;align-self:flex-start}
+
+html,body{font-synthesis:none}
+
+.topIn{align-items:center}
+
+/* v28: poprawa pola Pstryk i sekcji kontaktowej */
+
+/* v30 fixes: visible Pstryk box + darker branded background */
+
+/* v31 PRINT SAFE - finalne reguly do zapisu PDF */
+
+/* v32 PDF SAFE: 2 strony A4, bez znaków wodnych i bez pseudo-tła */
+
+.compactSectionTitle{font-weight:950;color:var(--green2);font-size:15px;margin:12px 0 8px}
+
+.compactGrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+
+.compactContact{margin-top:10px!important;grid-template-columns:1.12fr .88fr!important}
+
+/* v33: druga strona PDF wypełniona proporcjonalnie treścią */
+
+/* v34 fix: widoczność pola Pstryk w widoku doradcy */
+
+/* v35: nagłówek oszczędności + wyróżnienie wariantu Realny */
+
+/* v39: strona 3 raportu klienta + wbudowany RDN 2025 */
+
+.dynamicAssumption{font-size:11px;color:#43523f;background:#f4faef;border:1px solid #cfe4c2;border-radius:10px;padding:8px;margin-top:8px}
+
+.dynamicTag{display:inline-block;background:#e6f3de;color:#235915;border-radius:999px;padding:2px 7px;font-weight:900;font-size:10px;margin-left:4px}
+
+/* v40: prostsze tabele dla klienta */
+
+.technicalSettings{display:none!important}
+
+/* v41: prostsze dane zużycia i kosztów */
+
+.costInputNote{font-size:11px;color:#4c5d45;margin-top:4px}
+
+.inputCalcBadge{display:inline-block;margin-left:4px;background:#e8f5e1;color:#2f8a00;border-radius:999px;padding:2px 7px;font-size:10px;font-weight:950}
+
+/* v44: czytelne dane doradcy w sekcji PDF */
+
+/* v48: logo PE wordmark bez ucinania */
+
+.top{overflow:visible!important;}
+
+.topIn{min-height:94px!important;padding:16px 18px 18px!important;align-items:center!important;overflow:visible!important;}
+
+.brandLogo{width:205px!important;height:auto!important;max-width:205px!important;max-height:none!important;object-fit:contain!important;object-position:center center!important;display:block!important;flex:0 0 205px!important;}
+
+.topBrandText{padding-top:0!important;}
+
+.topRightInfo{padding-top:0!important;}
+
+/* v49: dopisek przy wariantach cenowych */
+
+/* v50: czytelna tabela porównania taryf w PDF */
+
+/* v51: stabilny wydruk grafik wariantów produktowych */
+
+/* v52: czytelny koszt po wsparciu i stabilne opisy */
+
+.costLabel{font-size:11px;font-weight:950;text-transform:uppercase;letter-spacing:.05em;color:#61715d;margin-top:8px}
+
+.variantCard .variantPrice{margin-top:2px!important}
+
+/* v54: status ceny i pływający komunikat bez zaburzania układu kart */
+
+.priceNotice{display:none!important}
+
+.priceSource{font-size:11px;font-weight:900;margin-top:5px;color:#51624d}
+
+.priceSource.manual{color:#9a5a00}
+
+.priceTools{display:flex;gap:6px;align-items:center;margin-top:7px;flex-wrap:wrap}
+
+.priceTools button{font-size:10px;padding:6px 8px;border-radius:9px}
+
+.priceHint{font-size:10px;color:#596555;margin-top:4px;line-height:1.25}
+
+.priceToast{position:fixed;right:22px;bottom:22px;max-width:390px;background:#fff8d9;border:1px solid #e3c94b;color:#463900;border-radius:16px;padding:12px 14px;font-size:12px;font-weight:850;box-shadow:0 14px 34px rgba(34,49,31,.22);z-index:9999;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .22s ease,transform .22s ease}
+
+.priceToast.show{opacity:1;transform:translateY(0)}

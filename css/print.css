@@ -1,4 +1,263 @@
-/*
- * Print mode styles.
- * Move @page and @media print rules here only after visual PDF/A4 comparison.
- */
+/* Extracted from kalkulator_pionier_energia_v55_.html.html. CSS only; JavaScript logic unchanged. */
+
+@media print{ @page{size:A4;margin:0} html,body{background:#fff!important;margin:0!important;width:210mm!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;font-size:10px}.noPrint,.top,.panel,.card:not(.report){display:none!important}.wrap{width:210mm!important;max-width:none!important;margin:0!important;padding:0!important}.layout{display:block!important;margin:0!important}.report{border:0!important;border-radius:0!important;overflow:visible!important;margin:0!important}.reportPage{width:210mm!important;height:297mm!important;min-height:0!important;max-height:297mm!important;overflow:hidden!important;box-sizing:border-box!important;padding:8mm 9mm!important;border:0!important;page-break-after:always;break-after:page}.reportPage:last-child{page-break-after:auto;break-after:auto}.reportHead{padding-bottom:4px!important;border-bottom:3px solid var(--green)!important}.reportHead .logoText{font-size:15px!important}.reportTitle h2{font-size:14px!important}.mini{font-size:7px!important}.heroReport{grid-template-columns:1.08fr .92fr!important;gap:6mm!important;margin-top:5mm!important}.recommendBlock{padding:4mm!important;border-radius:12px!important}.recommendBlock h1{font-size:18px!important}.recommendBlock p{font-size:8.3px!important}.homeImg{height:63mm!important;border-radius:12px!important}.kpiGrid{grid-template-columns:repeat(3,1fr)!important;gap:2.3mm!important}.kpi{padding:2.3mm!important;border-radius:8px!important}.kpi span{font-size:6px!important}.kpi b{font-size:11px!important}.balanceNote{font-size:7.2px!important;margin-top:3mm!important}.rBox{padding:3mm!important;border-radius:9px!important}.rBox h3{font-size:10px!important;margin-bottom:2mm!important}.rGrid2{grid-template-columns:1fr 1fr!important;gap:3mm!important;margin-top:3mm!important}.rGrid3{grid-template-columns:repeat(3,1fr)!important;gap:3mm!important;margin-top:3mm!important}.reportVariants{grid-template-columns:repeat(3,1fr)!important;gap:3mm!important}.reportVariant{padding:2.4mm!important;border-radius:10px!important}.variantImg{height:28mm!important;border-radius:8px!important}.reportVariant h3{font-size:10px!important;margin-top:1.5mm!important}.flag{font-size:5.8px!important;padding:1.2mm 1.8mm!important}.bigMoney{font-size:12.5px!important}.grossMoney,.benefit{font-size:7px!important}.detailTable{font-size:6.2px!important}.detailTable td{padding:1.2mm 0!important}.tariffTable{font-size:7px!important}.tariffTable th,.tariffTable td{padding:1.5mm!important}.tariffTable th{font-size:6px!important}.pstrykBox ul{font-size:7px!important;line-height:1.15!important}.peopleImg{height:37mm!important}.legal{font-size:5.7px!important;line-height:1.15!important;padding:2mm!important;margin-top:2mm!important}.chartTiny{height:14mm!important;margin-top:2mm!important}.barCurrent,.barAfter{height:4mm!important}.barCurrent{top:3mm!important}.barAfter{top:8.5mm!important}.chartTiny span{font-size:5.6px!important;line-height:4mm!important}.barLabel1{top:3mm!important}.barLabel2{top:8.5mm!important}}
+
+@media print{.reportLogo{width:auto!important;max-width:56mm!important;height:14mm!important;max-height:none!important}.brandLogo{width:60mm!important;max-width:60mm!important;height:auto!important;max-height:16mm!important}.reportPage{background:linear-gradient(135deg,#fafff7 0%,#eefbe6 42%,#dcf6cd 100%)!important}.reportPage::before{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}.reportPage::after{font-size:34px!important;right:-6mm!important;bottom:8mm!important;color:rgba(47,138,0,.055)!important}.reportHead{background:rgba(255,255,255,.78)!important;padding:2.5mm 3mm!important;border-radius:4mm!important;margin-bottom:1mm!important}.rBox,.kpi,.reportVariant,.recommendBlock,.legal{background:rgba(255,255,255,.90)!important}.pstrykLogo{width:8mm!important;height:8mm!important;border-radius:2mm!important}.pstrykTitle{gap:2mm!important;margin-bottom:1mm!important}.pstrykIntro{font-size:6.1px!important;line-height:1.22!important;margin-bottom:1.2mm!important}.pstrykArgs{grid-template-columns:1fr 1fr!important;gap:1.2mm!important;margin:1.2mm 0!important}.pstrykArgs div{padding:1.2mm 1.5mm!important;border-radius:2mm!important}.pstrykArgs b{font-size:5.8px!important}.pstrykArgs span{font-size:5.3px!important;line-height:1.15!important}.pstrykBox li{font-size:5.8px!important;line-height:1.16!important;margin:0.5mm 0!important}.pstrykLabel img{width:4.6mm!important;height:4.6mm!important;border-radius:1.2mm!important}.pstrykLabel.small img{width:4mm!important;height:4mm!important}}
+
+@media print{
+  html,body,body *{font-family:Arial,Helvetica,sans-serif!important;font-synthesis:none!important}
+  .reportPage{background:linear-gradient(180deg,#fbfff8 0%,#eef8e4 48%,#fbfff8 100%)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .variantImg{padding:6px!important}
+}
+
+@media print{
+  .negBars{height:34mm!important;gap:2.2mm!important;margin-top:2mm!important}
+  .negBarWrap{height:25mm!important}
+  .negBar{width:68%!important;border-radius:3mm 3mm 1mm 1mm!important}
+  .negVal{font-size:6.4px!important;margin-bottom:0.8mm!important}
+  .negYear{font-size:5.8px!important;margin-top:1mm!important}
+  .negFoot{font-size:5.4px!important;line-height:1.16!important;margin-top:1.2mm!important}
+  .reportVariants{gap:2.2mm!important}
+  .reportVariant{padding:2.5mm!important;min-height:80mm!important}
+  .variantImg{height:34mm!important;padding:1.5mm!important}
+  .reportVariant h3{font-size:8.5px!important;margin-top:1.4mm!important}
+  .detailTable{font-size:5.45px!important;margin-top:1.2mm!important}
+  .detailTable td{padding:0.55mm 0!important}
+}
+
+@media print{
+  .contactGrid{grid-template-columns:1.12fr .88fr!important;gap:3mm!important;align-items:stretch!important}
+  .peopleImg{height:42mm!important;object-position:left center!important}
+  .contactGrid .rBox h3{font-size:8.8px!important;margin-bottom:1.2mm!important}
+  .contactGrid .detailTable{font-size:6.5px!important}
+  .contactGrid .mini{font-size:5.8px!important}
+  .pstrykBox{background:#eef8e9!important;color:#183316!important;border:1px solid #96c47d!important;box-shadow:none!important}
+  .pstrykBox h3,.pstrykBox b{color:#183316!important}
+  .pstrykIntro,.pstrykArgs span,.pstrykBox li{color:#274124!important}
+  .pstrykArgs div{background:#ffffff!important;border:1px solid #cfe4c2!important}
+  .pstrykLogo{background:#08242b!important}
+}
+
+@media print{
+  .reportPage{background:linear-gradient(145deg,#f2f7ed 0%,#e1edd6 42%,#d2e3c5 100%)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .reportPage::before{display:block!important;content:""!important;opacity:1!important}
+  .reportPage::after{display:block!important;content:""!important;opacity:.055!important;width:65mm!important;height:24mm!important;right:8mm!important;bottom:8mm!important}
+  .rBox.pstrykBox{background:linear-gradient(135deg,#1a4f1b 0%,#348b13 58%,#88cf58 100%)!important;color:#fff!important;border:1px solid #2d7b1a!important;box-shadow:none!important}
+  .rBox.pstrykBox h3,.rBox.pstrykBox b,.rBox.pstrykBox .pstrykIntro,.rBox.pstrykBox .pstrykArgs span,.rBox.pstrykBox li{color:#fff!important}
+  .rBox.pstrykBox .pstrykArgs div{background:rgba(255,255,255,.16)!important;border:1px solid rgba(255,255,255,.26)!important}
+}
+
+@media print{
+  @page{size:A4;margin:0}
+  html,body{width:210mm!important;margin:0!important;padding:0!important;background:#fff!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  .noPrint,.top,.panel,.card:not(.report){display:none!important}
+  .wrap,.layout,.report{width:210mm!important;max-width:210mm!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;display:block!important;overflow:visible!important;background:#fff!important}
+  .reportPage{
+    width:210mm!important;height:297mm!important;min-height:297mm!important;max-height:297mm!important;
+    margin:0!important;padding:7mm 8mm!important;box-sizing:border-box!important;overflow:hidden!important;
+    page-break-after:always!important;break-after:page!important;border:0!important;
+    background:linear-gradient(145deg,#f1f7ec 0%,#e2eed7 50%,#d5e6c8 100%)!important;
+  }
+  .reportPage:last-child{page-break-after:auto!important;break-after:auto!important}
+  .reportPage::before{display:block!important;content:""!important;position:absolute!important;inset:0!important;z-index:0!important;background:radial-gradient(circle at 10% 10%,rgba(255,204,0,.14),transparent 20%),radial-gradient(circle at 88% 20%,rgba(47,138,0,.13),transparent 24%),linear-gradient(180deg,rgba(255,255,255,.28),rgba(255,255,255,.04))!important}
+  .reportPage::after{display:block!important;content:"PIONIER energia"!important;background:none!important;width:auto!important;height:auto!important;right:7mm!important;bottom:7mm!important;color:rgba(47,138,0,.075)!important;font-size:22px!important;line-height:1!important;transform:rotate(-5deg)!important}
+  .reportHead{height:18mm!important;padding:2.2mm 3mm!important;margin-bottom:2.5mm!important;border-bottom:2px solid var(--green)!important;background:rgba(255,255,255,.92)!important;border-radius:4mm!important}
+  .reportLogo{width:36mm!important;max-height:12mm!important}
+  .reportTitle h2{font-size:13px!important}.mini{font-size:6px!important;line-height:1.2!important}
+  .rGrid2{grid-template-columns:1fr 1fr!important;gap:3mm!important;margin-top:3mm!important}.rGrid3,.reportVariants,.kpiGrid,.scenarioGrid{grid-template-columns:repeat(3,1fr)!important;gap:2.4mm!important}
+  .rBox,.kpi,.reportVariant,.recommendBlock,.legal,.scenarioCard{background:rgba(255,255,255,.94)!important;backdrop-filter:none!important;border:1px solid #c9dcbf!important}
+  .rBox{padding:2.6mm!important;border-radius:3.5mm!important}.rBox h3{font-size:8.8px!important;margin:0 0 1.6mm!important;line-height:1.15!important}
+  .tariffTable{font-size:6.2px!important}.tariffTable th,.tariffTable td{padding:1.2mm!important}
+  .pstrykBox{display:block!important;visibility:visible!important;opacity:1!important}
+  .rBox.pstrykBox{background:#e7f5df!important;color:#193316!important;border:1.2px solid #6baa4d!important;box-shadow:none!important}
+  .rBox.pstrykBox h3,.rBox.pstrykBox b{color:#193316!important}.rBox.pstrykBox .pstrykIntro,.rBox.pstrykBox .pstrykArgs span,.rBox.pstrykBox li{color:#263d22!important}
+  .rBox.pstrykBox .pstrykArgs{grid-template-columns:1fr 1fr!important;gap:1mm!important;margin:1mm 0!important}.rBox.pstrykBox .pstrykArgs div{background:#fff!important;border:1px solid #b8d9a7!important;padding:1mm 1.2mm!important;border-radius:2mm!important}
+  .pstrykLogo{width:7mm!important;height:7mm!important}.pstrykTitle{gap:1.5mm!important;margin-bottom:1mm!important}.pstrykIntro{font-size:5.7px!important;line-height:1.18!important}.pstrykArgs b{font-size:5.6px!important}.pstrykArgs span{font-size:5.1px!important;line-height:1.12!important}.pstrykBox li{font-size:5.3px!important;line-height:1.12!important;margin:.4mm 0!important}
+  .peopleImg{height:34mm!important;object-position:left center!important}.contactGrid{grid-template-columns:1.13fr .87fr!important;gap:2.5mm!important;margin-top:3mm!important}.contactGrid .rBox h3{font-size:8.4px!important}.contactGrid .detailTable{font-size:6px!important}
+  .legal{font-size:5.1px!important;line-height:1.1!important;padding:1.6mm!important;margin-top:2mm!important;border-radius:3mm!important}
+}
+
+@media print{
+  @page{size:A4;margin:0}
+  html,body{margin:0!important;padding:0!important;width:210mm!important;background:#fff!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  .noPrint,.top,.panel,.card:not(.report){display:none!important}
+  .wrap,.layout,.report{width:210mm!important;max-width:210mm!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:#fff!important;display:block!important;overflow:visible!important}
+  .reportPage{width:210mm!important;height:297mm!important;min-height:297mm!important;max-height:297mm!important;margin:0!important;padding:7mm 8mm!important;box-sizing:border-box!important;overflow:hidden!important;page-break-after:always!important;break-after:page!important;border:0!important;background:#f4f8ef!important}
+  .reportPage:last-child{page-break-after:auto!important;break-after:auto!important}
+  .reportPage::before,.reportPage::after{display:none!important;content:none!important;background:none!important}
+  .reportHead{height:17mm!important;padding:2mm 3mm!important;margin-bottom:2mm!important;border-bottom:2px solid var(--green)!important;background:#fff!important;border-radius:4mm!important}
+  .reportLogo{width:35mm!important;max-height:12mm!important}
+  .reportTitle h2{font-size:12px!important}.mini{font-size:5.3px!important;line-height:1.12!important}
+  .rBox,.kpi,.reportVariant,.recommendBlock,.legal,.scenarioCard{background:#fff!important;backdrop-filter:none!important;border:1px solid #cdddc5!important;box-shadow:none!important}
+  .rBox{padding:2mm!important;border-radius:3mm!important}.rBox h3{font-size:7.2px!important;margin:0 0 1.1mm!important;line-height:1.12!important}
+  .compactReport{padding:6mm 7mm!important}
+  .compactSectionTitle{font-size:7.5px!important;margin:1.5mm 0 1.2mm!important}
+  .compactReport .reportVariants{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:2mm!important;margin-top:0!important}
+  .compactReport .reportVariant{padding:1.6mm!important;border-radius:3mm!important;min-height:0!important;gap:.5mm!important}
+  .compactReport .variantImg{height:23mm!important;object-fit:contain!important;padding:1mm!important;border-radius:2.5mm!important}
+  .compactReport .flag{font-size:4.8px!important;padding:.8mm 1.2mm!important;line-height:1!important}
+  .compactReport .reportVariant h3{font-size:7px!important;margin:.8mm 0 0!important;line-height:1.05!important}
+  .compactReport .bigMoney{font-size:9.5px!important;line-height:1.05!important;margin:.8mm 0!important}
+  .compactReport .grossMoney,.compactReport .benefit{font-size:5.4px!important;line-height:1.1!important;margin:.4mm 0!important}
+  .compactReport .detailTable{font-size:4.9px!important;margin-top:.6mm!important;line-height:1.05!important}
+  .compactReport .detailTable td{padding:.32mm 0!important}
+  .compactReport .detailTable tr:nth-child(1),.compactReport .detailTable tr:nth-child(2),.compactReport .detailTable tr:nth-child(3){display:none!important}
+  .compactGrid{grid-template-columns:1fr 1fr!important;gap:2mm!important;margin-top:2mm!important}
+  .tariffTable{font-size:5.2px!important}.tariffTable th,.tariffTable td{padding:.8mm!important}
+  .pstrykLabel img{width:4mm!important;height:4mm!important}.pstrykLabel.small img{width:3.5mm!important;height:3.5mm!important}
+  .compactReport .pstrykBox{display:block!important;visibility:visible!important;opacity:1!important;background:#e8f6df!important;color:#193316!important;border:1px solid #89ba6a!important}
+  .compactReport .pstrykBox h3,.compactReport .pstrykBox b{color:#193316!important}.compactReport .pstrykIntro,.compactReport .pstrykArgs span{color:#263d22!important}
+  .compactReport .pstrykIntro{font-size:5.2px!important;line-height:1.12!important;margin:0 0 1mm!important}
+  .compactReport .pstrykArgs{grid-template-columns:1fr 1fr!important;gap:.8mm!important;margin:.8mm 0 0!important}
+  .compactReport .pstrykArgs div{padding:.8mm 1mm!important;border-radius:1.8mm!important;background:#fff!important;border:1px solid #c3dfb3!important}
+  .compactReport .pstrykArgs b{font-size:5.1px!important}.compactReport .pstrykArgs span{font-size:4.7px!important;line-height:1.08!important}
+  .compactContact{grid-template-columns:1.12fr .88fr!important;gap:2mm!important;margin-top:2mm!important}
+  .compactContact .peopleImg{height:27mm!important;object-position:left center!important;border-radius:3mm!important}
+  .compactContact .rBox h3{font-size:7.2px!important}.compactContact .detailTable{font-size:5.2px!important}
+  .legal{font-size:4.5px!important;line-height:1.08!important;padding:1.3mm!important;margin-top:1.6mm!important;border-radius:2.5mm!important}
+}
+
+@media print{
+  .compactReport{
+    width:210mm!important;height:297mm!important;min-height:297mm!important;max-height:297mm!important;
+    padding:5mm 7mm!important;
+    display:flex!important;flex-direction:column!important;justify-content:space-between!important;gap:1.8mm!important;
+    overflow:hidden!important;background:#f4f8ef!important;
+  }
+  .compactReport .reportHead{
+    flex:0 0 20mm!important;height:20mm!important;margin:0!important;padding:2.5mm 3mm!important;border-radius:4mm!important;
+  }
+  .compactReport .reportLogo{width:42mm!important;max-height:15mm!important}
+  .compactReport .reportTitle h2{font-size:13.5px!important}
+  .compactReport .compactSectionTitle{font-size:8.6px!important;margin:0!important;line-height:1.05!important;flex:0 0 auto!important}
+  .compactReport .reportVariants{
+    flex:0 0 92mm!important;height:92mm!important;display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:2.8mm!important;margin:0!important;
+  }
+  .compactReport .reportVariant{
+    height:92mm!important;min-height:92mm!important;max-height:92mm!important;padding:2.8mm!important;border-radius:4mm!important;display:flex!important;flex-direction:column!important;gap:.7mm!important;
+  }
+  .compactReport .variantImg{height:35mm!important;min-height:35mm!important;object-fit:contain!important;padding:1.5mm!important;border-radius:3mm!important}
+  .compactReport .flag{font-size:5.7px!important;padding:.9mm 1.5mm!important;line-height:1.05!important}
+  .compactReport .reportVariant h3{font-size:8.8px!important;margin:.9mm 0 0!important;line-height:1.05!important}
+  .compactReport .reportVariant .mini{font-size:5.8px!important;line-height:1.1!important;min-height:3.5mm!important}
+  .compactReport .bigMoney{font-size:13.5px!important;line-height:1.05!important;margin:.9mm 0!important}
+  .compactReport .grossMoney,.compactReport .benefit{font-size:6.2px!important;line-height:1.15!important;margin:.3mm 0!important}
+  .compactReport .detailTable{font-size:5.9px!important;line-height:1.06!important;margin-top:.8mm!important}
+  .compactReport .detailTable td{padding:.48mm 0!important}
+  .compactReport .detailTable tr{display:table-row!important}
+
+  .compactGrid{grid-template-columns:1fr 1fr!important;gap:2.8mm!important;margin:0!important}
+  .compactReport .compactTariffs{flex:0 0 43mm!important;height:43mm!important}
+  .compactReport .compactInfo{flex:0 0 62mm!important;height:62mm!important}
+  .compactReport .compactTariffs .rBox{height:43mm!important;min-height:43mm!important;padding:2.4mm!important;border-radius:3.5mm!important}
+  .compactReport .compactInfo .rBox{height:62mm!important;min-height:62mm!important;padding:2.5mm!important;border-radius:3.5mm!important}
+  .compactReport .rBox h3{font-size:8.3px!important;margin:0 0 1.8mm!important;line-height:1.1!important}
+  .compactReport .tariffTable{font-size:6.2px!important;line-height:1.1!important}
+  .compactReport .tariffTable th,.compactReport .tariffTable td{padding:1.05mm!important}
+  .compactReport .tariffTable th{font-size:5.8px!important}
+  .compactReport #tariffDefinitions{font-size:6px!important;line-height:1.15!important}
+  .compactReport #tariffDefinitions p{margin:.8mm 0!important}
+  .compactReport .pstrykIntro{font-size:5.9px!important;line-height:1.15!important;margin:0 0 1.2mm!important}
+  .compactReport .pstrykArgs{grid-template-columns:1fr 1fr!important;gap:1.5mm!important;margin:1.2mm 0 0!important}
+  .compactReport .pstrykArgs div{padding:1.6mm 1.8mm!important;border-radius:2mm!important}
+  .compactReport .pstrykArgs b{font-size:6.2px!important;line-height:1.1!important}
+  .compactReport .pstrykArgs span{font-size:5.5px!important;line-height:1.12!important}
+  .compactReport .pstrykLogo{width:7mm!important;height:7mm!important}
+
+  .compactReport .compactContact{flex:0 0 38mm!important;height:38mm!important;display:grid!important;grid-template-columns:1.18fr .82fr!important;gap:2.8mm!important;margin:0!important}
+  .compactReport .compactContact .peopleImg{height:38mm!important;min-height:38mm!important;object-position:left center!important;border-radius:3.5mm!important}
+  .compactReport .compactContact .rBox{height:38mm!important;min-height:38mm!important;padding:2.6mm!important;display:flex!important;flex-direction:column!important;justify-content:center!important;border-radius:3.5mm!important}
+  .compactReport .compactContact .rBox h3{font-size:8.3px!important;margin:0 0 1.4mm!important}
+  .compactReport .compactContact .mini{font-size:5.8px!important;line-height:1.15!important}
+  .compactReport .compactContact .detailTable{font-size:6.1px!important;margin-top:1.2mm!important}
+  .compactReport .legal{flex:0 0 8mm!important;height:8mm!important;margin:0!important;font-size:4.9px!important;line-height:1.08!important;padding:1.2mm 1.8mm!important;border-radius:2.5mm!important;overflow:hidden!important}
+}
+
+@media print{
+  #pstrykInfoBox{
+    background:linear-gradient(135deg,#dceecd 0%,#cbe6b5 100%) !important;
+    color:#1b3318 !important;
+    border:1px solid #7db14f !important;
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+  }
+  #pstrykInfoBox h3,
+  #pstrykInfoBox .pstrykTitle h3,
+  #pstrykInfoBox .pstrykArgs b{
+    color:#132911 !important;
+  }
+  #pstrykInfoBox .pstrykIntro,
+  #pstrykInfoBox .pstrykArgs span,
+  #pstrykInfoBox li{
+    color:#355031 !important;
+  }
+  #pstrykInfoBox .pstrykArgs div{
+    background:#ffffff !important;
+    border:1px solid #b6d79f !important;
+  }
+}
+
+@media print{
+  .balanceNote{font-size:10px !important;font-weight:900 !important;padding:2.1mm 2.6mm !important;border-left:2mm solid var(--green) !important}
+  .scenarioCard.recommended{border:0.8mm solid #5d8e34 !important;box-shadow:none !important;background:#f4faef !important}
+}
+
+@media print{
+  #report3.reportPage{height:297mm!important;max-height:297mm!important;overflow:hidden!important;padding:8mm 9mm!important}
+  .energyGuideHeader{margin-bottom:3mm!important}
+  .energyGuideHeader h2{font-size:15pt!important}
+  .energyGuideHeader p{font-size:7.6pt!important;line-height:1.22!important}
+  .energyGuideStats{gap:2mm!important;margin:2.4mm 0 2.8mm!important}
+  .energyStat{padding:2mm!important;border-radius:3mm!important}
+  .energyStat span{font-size:5.4pt!important}
+  .energyStat b{font-size:9pt!important}
+  .energyLead{padding:3mm 3.5mm!important;margin-bottom:2.6mm!important;font-size:7.7pt!important;line-height:1.28!important;border-radius:3.5mm!important}
+  .energyGuideGrid{gap:2.5mm!important;margin-bottom:2.5mm!important}
+  .energyBlock{padding:3mm!important;border-radius:3.5mm!important;box-shadow:none!important}
+  .energyNum{width:6.8mm!important;height:6.8mm!important;font-size:8pt!important;margin-bottom:1.6mm!important}
+  .energyBlock h3{font-size:9.3pt!important;margin-bottom:1.5mm!important}
+  .energyBlock p{font-size:6.9pt!important;line-height:1.22!important;margin-bottom:1.3mm!important}
+  .energyRec{padding:2mm 2.4mm!important;border-radius:2.6mm!important;font-size:6.8pt!important;line-height:1.2!important;margin-top:1.4mm!important}
+  .energySummaryWrap{gap:2.5mm!important;margin-top:2mm!important}
+  .energySummaryCard,.energyChoiceCard{padding:3mm!important;border-radius:3.5mm!important}
+  .energySummaryCard h3,.energyChoiceCard h3{font-size:9.5pt!important;margin-bottom:1.5mm!important}
+  .energySummaryCard p,.energyChoiceCard p,.energyChoiceItem{font-size:6.9pt!important;line-height:1.22!important}
+  .energyChoiceItem{padding:2mm!important;border-radius:2.6mm!important}
+  .energyChoiceItem strong{font-size:7.8pt!important}
+  .energyFinal{padding:3mm 3.5mm!important;border-radius:3.5mm!important;font-size:8.8pt!important;line-height:1.24!important;margin-top:2.5mm!important}
+  .energyFinal span{font-size:6.9pt!important;margin-top:1.3mm!important}
+}
+
+@media print{.savingsAltBox{font-size:5.8px!important;padding:1.8mm!important;margin-top:1.4mm!important}.savingsAltBox h4{font-size:6.5px!important;margin-bottom:1mm!important}.savingsAltGrid{gap:1.2mm!important}.savingsAltItem{padding:1.4mm!important;border-radius:2mm!important}.savingsAltItem b{font-size:6px!important}.tariffReadable .bestBadge{font-size:4.8px!important;padding:.7mm 1.1mm!important}}
+
+@media print{.costInputNote,.inputCalcBadge{display:none!important}}
+
+@media print{
+  .contactBox .advisorPdfName{font-size:9.2px!important;margin-top:1.2mm!important}
+  .contactBox .advisorPdfLine{font-size:6.6px!important;margin-top:.9mm!important}
+  .contactBox .advisorPdfNote{font-size:5.6px!important;margin-top:1.2mm!important;line-height:1.15!important}
+}
+
+@media print{
+  .reportLogo{width:42mm!important;height:auto!important;max-width:42mm!important;max-height:none!important;object-fit:contain!important;}
+  .reportHead{min-height:14mm!important;align-items:center!important;overflow:visible!important;}
+}
+
+@media print{.variantOrderNote{font-size:5.8px!important;line-height:1.16!important;margin:1.5mm 0 .5mm!important;padding:1.4mm 2mm!important;border-left:1.2mm solid var(--green)!important;border-radius:2mm!important}}
+
+@media print{
+  .compactReport .tariffReadable,.tariffReadable{font-size:6.4px!important;line-height:1.12!important;table-layout:fixed!important;}
+  .compactReport .tariffReadable th,.compactReport .tariffReadable td,.tariffReadable th,.tariffReadable td{padding:1.0mm .75mm!important;line-height:1.12!important;vertical-align:top!important;}
+  .compactReport .tariffReadable th,.tariffReadable th{font-size:5.9px!important;letter-spacing:0!important;}
+  .tariffReadable .tariffNote{font-size:5.45px!important;line-height:1.08!important;margin-top:.45mm!important;}
+  .tariffReadable .bestBadge{font-size:4.8px!important;padding:.35mm .7mm!important;}
+}
+
+@media print{
+  .variantImg{display:block!important;visibility:visible!important;opacity:1!important;width:100%!important;height:35mm!important;min-height:35mm!important;object-fit:contain!important;object-position:center center!important;background:#fff!important;padding:1.5mm!important;border:0.4mm solid #d7e3d2!important;border-radius:3mm!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
+  .reportVariant,.reportVariant *{content-visibility:visible!important;}
+}
+
+@media print{.costLabel{font-size:5.8px!important;margin-top:1mm!important}.reportCostLabel{font-size:5.6px!important;margin-top:.8mm!important}.netbillingNote{font-size:5.8px!important;line-height:1.18!important;padding:1.5mm!important;margin-top:1.5mm!important;border-radius:2mm!important}}
+
+@media print{.priceToast{display:none!important}}
